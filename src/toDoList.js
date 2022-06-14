@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const initialState = [...Array(10000)].map((_, index) => {
+const initialState = [...Array(20000)].map((_, index) => {
         return {
             task: `Task ${index} です`,
             isCompleted: false,
@@ -56,12 +56,9 @@ const ToDoList = () => {
                             onChange={() => handleUpdateTask(index)}
                         />
                         {todo.task}&nbsp;
-                        <span
-                            onClick={() => handleRemoveTask(index)}
-                            style={{ cursor: 'pointer' }}
-                        >
+                        <button onClick={() => handleRemoveTask(index)}>
                             X
-                        </span>
+                        </button>
                     </li>
                 ))}
             </ul>

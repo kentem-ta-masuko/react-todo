@@ -2,7 +2,7 @@ import ToDoList from './toDoList';
 
 function App() {
   return (
-    <div style={{margin: "2em"}}>
+    <div>
       <ToDoList />
     </div>
   );
